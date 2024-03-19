@@ -2,9 +2,9 @@
 
 // Function to generate a random integer within a specified range
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const transformedMin = Math.ceil(min);
+  const transformedMax = Math.floor(max);
+  return Math.floor(Math.random() * (transformedMax - transformedMin + 1)) + transformedMin;
 }
 
 // Function to check if a number is even
